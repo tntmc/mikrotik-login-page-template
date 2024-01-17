@@ -1,0 +1,117 @@
+body{
+    font-family:'Helvetica';
+    margin: 0;
+    padding: 0;
+}
+
+a:visited{
+    color: #ffffff;
+}
+a:hover {
+    color: rgb(100, 255, 255);
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    width: 100%;
+}
+
+.logo{
+    width: 510px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -25px;
+}
+
+img{
+    filter: brightness(10);
+}
+
+.text{
+    font-size: 1.75em;
+    text-align: center;
+    align-items: center;
+    color:rgb(255, 255, 255);
+}
+
+.text2{
+    font-size: 1.60em;
+    text-align: center;
+    align-items: center;
+    color:rgba(255, 242, 242, 0.4);
+}
+
+.inputbox {
+    position: relative;
+    margin: 45px 0;
+    width: 410px;
+}
+
+.inputbox label{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .4s ease;
+}
+input:focus,
+input:valid{
+    color: transparent;
+    border: 4px solid rgb(150, 255, 255);
+}
+
+    
+input:focus + label,
+input:valid + label{
+    color: rgb(150, 255, 255);
+    height: 20px;
+    line-height: 20px;
+    padding: 0 15px;
+    transform: translate(-15px, -40px) scale(0.8);
+    z-index: 1111;
+}
+
+.inputbox input{
+    width: 115%;
+    height: 50px;
+    background: transparent;
+    border-radius: 20px;
+    font-size: 1em;
+    padding: 0 20px -80px 0;
+    color: rgb(255, 255, 255);
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: -105px;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    top: 20px;
+}
+
+
+.inputbox ion-icon:hover{
+    color: rgb(180, 255, 255);
+}
+
+
+button{
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, rgb(255, 202, 165), rgb(255, 62, 181));
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+button:hover{
+    background: linear-gradient(45deg, rgb(0, 255, 119), rgb(127, 222, 248));
+}
+    
